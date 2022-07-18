@@ -9,7 +9,15 @@ public class Main {
     }
 
     public static ArrayList<Integer> getNums(int[] nums) {
-        // your code here
-        return null;
+        TreeSet<Integer> newTreeSet = new TreeSet<>();
+        ArrayList<Integer> newArrayList = new ArrayList<>();
+        for (int i: nums) {
+            if(i>25)
+            {
+                newTreeSet.add(i);
+            }
+        }
+        newArrayList.addAll(newTreeSet);
+        return newArrayList;
     }
 }
